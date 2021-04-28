@@ -39,3 +39,14 @@
     transform: rotate(360deg);
   }
 }
+
+.task {
+
+}
+
+.task.reminder {
+  background-color: lightgrey;
+  border-left: 5px solid green;
+  margin: 0 auto;
+  width: 80%;
+}
