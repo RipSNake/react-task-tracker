@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Tasks from './components/Tasks';
 import AddTask from './components/AddTask';
@@ -29,7 +29,24 @@ function App() {
       reminder: true
     },
   ]);
+/*
+  // fetch date from server
+  useEffect(() => {
+    const getTasks = async () => {
+      const tasksFromServer = awai
+    }
 
+      fetchTasks();
+    }
+  }, []);
+
+  const fetchTasks = async () => {
+      const res = await fetch('http://where-the-server-runs');
+      const data = await res.json();
+
+      return data;
+  }
+*/
   const addTask = (task) => {
     const id = tasks.length + 1;
     const newTask = {id, ...task};
